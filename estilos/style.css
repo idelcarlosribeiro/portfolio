@@ -10,11 +10,24 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+    background-color: rgb(37, 37, 37);
+    
+
+    transition: background 0.2s linear;
+}
+
 main{
     position: relative;
     height: 100%;
     width: 100%;
 }
+
+
+
 
 .menu-lateral {
     width: 60px;
@@ -50,9 +63,11 @@ ul {
 ul li.itens:hover {
     background-color: darkgray;
     transition: 0.6s;
+    border-radius: 30px;
 }
 ul li.ativo{
     background-color: darkgray;
+    border-radius: 20px;
 }
 
 ul li.itens a {
@@ -81,22 +96,13 @@ ul li.itens a .icon > i {
 }
 
 
-body {
-    display: flex;
-    padding: 10px;
-    justify-content: right;
-    background-color: rgb(37, 37, 37);
-    
 
-    transition: background 0.2s linear;
-}
 #dark-thema{
     width: 70px;
     height: 35px;
     float: right;
     margin-right: auto;
 }
-
 
 body.dark{
     background-color: #ffffff;
