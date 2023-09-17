@@ -1,0 +1,53 @@
+@charset "UTF-8";   
+
+@media screen and (max-width: 550px){ /*Celular*/
+    .liguas{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: wheat;
+    }
+    .foto {
+        display: flex;
+        border-radius: 0px;
+        float: right;
+    }
+    .bloco {
+        display: none;
+    }
+    .bloco-cll {
+        display: block;
+    }
+}
+@media screen and (min-width: 500px) {
+    main{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .bloco-cll{
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 800px){ /*Desktop Tv*/
+    main {
+        width: 780px;
+    }
+    .bloco-cll {
+        display: none;
+    }
+}
+@media screen and (min-width: 1300px){
+    main {
+        width: 100%;
+    }
+    .bloco-cll {
+        display: none;
+    }
+}
