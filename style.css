@@ -15,7 +15,8 @@ main{
     width: 1300px;
     height: 100vh;
     margin: auto;
-    transition-timing-function: ease;
+    
+    transition: width .3s, heiht .3s;
 }
 
 #topo {
@@ -24,10 +25,10 @@ main{
     height: 400px;
     background: url(imagens/pexels-pixabay-315191.jpg);
     background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 5px 10px rgb(66, 65, 65);
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 10px;
+    box-shadow: inset 0px 0px 5px 10px rgb(66, 65, 65);
 }
 #texto {
     font-family: 'Oswald', sans-serif;
@@ -73,6 +74,8 @@ main{
     justify-content: space-evenly;
     background-color: rgb(36, 36, 36);
     border-radius: 20px;
+
+    transition: width .3s, heiht .3s;
 }
 
 #sobre-mim{
@@ -146,9 +149,14 @@ main{
     color: wheat;
 }
 .liguas h2 {
-    margin: 20px;
+    margin: 10px;
 }
-
+#li {
+    margin: 10px;
+}
+#li p {
+    padding-bottom: 10px;
+}
 
 
 
