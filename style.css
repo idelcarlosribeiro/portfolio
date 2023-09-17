@@ -160,6 +160,27 @@ main{
 
 
 
-
+ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(84, 85, 85);
+    list-style-type: none;
+}
+.lingauem-proga {
+    margin: 40px;
+}
+.item-proga {
+    margin-bottom: 30px;
+    
+}
+ul li .icones  {
+    color: rgb(5, 122, 218);
+    font-size: 1.7em;
+}
+ul li .item-proga .texto-prog {
+    font-size: 1.4em;
+    color: white;
+    margin-left: 30px;
+}
 
 
