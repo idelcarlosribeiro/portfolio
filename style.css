@@ -160,12 +160,45 @@ main{
 
 
 
+
+
+
+.habilidaes{
+        display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(36, 36, 36);
+    
+
+    transition: width .3s, heiht .3s;
+}
+.texto-ha{
+    width: 100%;
+    background-color: rgba(81, 79, 84, 0.423);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.texto-ha p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+}
+
+
 ul {
     display: flex;
     background-color: rgb(30, 30, 30);
     list-style-type: none;
     justify-content: center;
 }
+
+
+
+
 .lingauem-proga {
     display: flex;
     flex-direction: column;
@@ -178,14 +211,14 @@ ul {
     flex-direction: row;
     align-items: center;
 }
-ul li .html  {
+ul li .html-ico  {
     display: flex;
     color: rgb(5, 122, 218);
     font-size: 1.7em;
     margin: 10px;
     padding: 10px;
 }
-ul li .item-proga .texto-prog {
+ul li .item-proga .texto-html {
     font-size: 1.4em;
     color: white;
     width: 270px;
@@ -202,7 +235,72 @@ ul li .item-proga .texto-prog {
     background-color: rgb(54, 54, 57);
     border-radius: 20px;
 }
-.barra-html .texto-prog p {
+.barra-html .texto-html p {
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+
+ul li .css-ico  {
+    display: flex;
+    color: rgb(5, 122, 218);
+    font-size: 1.7em;
+    margin: 10px;
+    padding: 10px;
+}
+.barra-css{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(54, 54, 57);
+    border-radius: 20px;
+}
+ul li .item-proga .texto-css {
+    font-size: 1.4em;
+    color: white;
+    width: 230px;
+    height: 38px;
+    background-image: linear-gradient(to left, #DE479C, #F55B65);
+    border-radius: 20px;
+}
+.barra-css .texto-css p {
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+ul li .js-ico  {
+    display: flex;
+    color: rgb(5, 122, 218);
+    font-size: 1.7em;
+    margin: 10px;
+    padding: 10px;
+}
+.barra-js{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(54, 54, 57);
+    border-radius: 20px;
+}
+ul li .item-proga .texto-js {
+    font-size: 1.4em;
+    color: white;
+    width: 140px;
+    height: 38px;
+    background-image: linear-gradient(to left, #DE479C, #F55B65);
+    border-radius: 20px;
+}
+.barra-js .texto-js p {
     text-align: center;
     margin-top: 8px;
 }
