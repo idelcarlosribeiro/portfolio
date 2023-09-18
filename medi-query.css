@@ -50,6 +50,11 @@
     .bloco-cll {
         display: none;
     }
+    .lingauem-proga {
+    display: flex;
+    flex-direction: row;
+    
+}
 }
 @media screen and (min-width: 1800px){
     main{

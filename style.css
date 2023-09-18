@@ -76,7 +76,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(36, 36, 36);
-    border-radius: 20px;
+    
 
     transition: width .3s, heiht .3s;
 }
@@ -162,25 +162,47 @@ main{
 
 ul {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(84, 85, 85);
+    background-color: rgb(30, 30, 30);
     list-style-type: none;
+    justify-content: center;
 }
 .lingauem-proga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 40px;
 }
 .item-proga {
-    margin-bottom: 30px;
-    
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-ul li .icones  {
+ul li .html  {
+    display: flex;
     color: rgb(5, 122, 218);
     font-size: 1.7em;
+    margin: 10px;
+    padding: 10px;
 }
 ul li .item-proga .texto-prog {
     font-size: 1.4em;
     color: white;
-    margin-left: 30px;
+    width: 270px;
+    height: 38px;
+    background-image: linear-gradient(to left, #DE479C, #F55B65);
+    border-radius: 20px;
 }
-
-
+.barra-html{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(54, 54, 57);
+    border-radius: 20px;
+}
+.barra-html .texto-prog p {
+    text-align: center;
+    margin-top: 8px;
+}
