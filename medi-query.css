@@ -13,7 +13,6 @@
     .foto {
         display: flex;
         border-radius: 0px;
-        float: right;
     }
     .bloco {
         display: none;
