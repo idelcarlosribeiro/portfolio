@@ -164,7 +164,7 @@ main{
 
 
 .habilidaes{
-        display: flex;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -175,17 +175,14 @@ main{
 }
 .texto-ha{
     width: 100%;
-    background-color: rgba(81, 79, 84, 0.423);
-    justify-content: center;
-    align-items: center;
+    background-image: linear-gradient(to left, #272a34, #333645);
     text-align: center;
-    
 }
 .texto-ha p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
     font-size: 2em;
-    color: white;
+    color: rgb(239, 234, 234);
+    margin-top: 20px;
 }
 
 
