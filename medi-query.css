@@ -32,6 +32,13 @@
     }
     ul li .item-proga .texto-js{
         width: 110px;
+        font-size: 1.2em;
+    }
+}
+@media  (max-width: 478px) {
+    .foto {
+        width: 100px;
+        height: 100px;
     }
 }
 @media screen and (min-width: 200px) {
