@@ -199,8 +199,8 @@ ul {
 .lingauem-proga {
     display: flex;
     flex-direction: column;
+    margin: auto;
     align-items: center;
-    margin: 40px;
 }
 .item-proga {
     margin-bottom: 20px;
@@ -301,3 +301,40 @@ ul li .item-proga .texto-js {
     text-align: center;
     margin-top: 8px;
 }
+
+
+
+
+
+
+#projetos {
+    background-color: rgb(36, 36, 36);
+}
+.conteudo {
+    background-color: rgb(36, 36, 36);
+}
+#conteudo-caixas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#texto-projeto{
+    width: 100%;
+    background-color: rgba(81, 79, 84, 0.423);
+}
+#texto-projeto h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.caixas {
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+.caixas p {
+    padding: 20px;
+}
+

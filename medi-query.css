@@ -2,7 +2,7 @@
 
 @media  (max-width: 550px) { /*Celular*/
     main{
-        width: 100%;
+        width: 100vw;
     }
     .liguas{
     display: flex;
@@ -19,11 +19,24 @@
     }
     .bloco-cll {
         display: block;
+    } 
+
+    .barra-html, .barra-css, .barra-js{
+        width: 200px;
+    }
+    ul li .item-proga .texto-html{
+    width: 170px;
+    }
+    ul li .item-proga .texto-css{
+        width: 150px;
+    }
+    ul li .item-proga .texto-js{
+        width: 110px;
     }
 }
 @media screen and (min-width: 200px) {
     main{
-        width: 100%;
+        width: 100vw;
     }
 }
 @media screen and (min-width: 600px) {
@@ -47,7 +60,7 @@
 }
 @media screen and (min-width: 1300px){
     main {
-        width: 100%;
+        width: 100vw;
     }
     .bloco-cll {
         display: none;
@@ -55,8 +68,7 @@
     .lingauem-proga {
     display: flex;
     flex-direction: row;
-    
-}
+    }
 }
 @media screen and (min-width: 1800px){
     main{
