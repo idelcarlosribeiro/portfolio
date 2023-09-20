@@ -52,6 +52,9 @@
     .conaiter-desktop {
         display: none;
     }
+    #conteiner-img{
+        width: 300px;
+    }
 }
 @media  (max-width: 478px) {
     .foto {

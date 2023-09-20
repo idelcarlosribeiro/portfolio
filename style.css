@@ -365,6 +365,7 @@ ul li .item-proga .texto-js {
     height: 20px;
     border: none;
     background-color: transparent;
+    color: beige;
     cursor: pointer;
 }
 #prev-button img, #next-button img {
