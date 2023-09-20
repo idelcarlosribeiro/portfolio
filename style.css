@@ -309,13 +309,13 @@ ul li .item-proga .texto-js {
 
 #projetos {
     background-color: rgb(36, 36, 36);
+    width: 100%;
 }
 .conteudo {
-    background-color: rgb(36, 36, 36);
-    
+    background-color: rgb(36, 36, 36);      ;
 }
 #texto-projeto{
-    width: 100%;
+    
     background-color: rgba(81, 79, 84, 0.423);
 }
 #texto-projeto h2 {
@@ -333,7 +333,6 @@ ul li .item-proga .texto-js {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 #conteiner-img {
     display: flex;
@@ -341,13 +340,15 @@ ul li .item-proga .texto-js {
     justify-content: center;
     width: 400px;
 }
+.conaiter-desktop img {
+    width: 400px;
+    padding: 10px;
+}
 .conteiner-dk{
     display: flex;
-    width: 100%;
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 .slider{
     display: flex;

@@ -61,9 +61,9 @@
 }
 @media screen and (min-width: 200px) {
     main{
-        width: 100vw;
+        width: 100%;
     }
-     .conteiner-slider{
+    .conteiner-slider{
         display: flex;
     }
     .conaiter-desktop {
@@ -74,7 +74,6 @@
     .bloco-cll{
         display: none;
     }
-
 }
 
 
@@ -98,7 +97,7 @@
 }
 @media screen and (min-width: 1300px){
     main {
-        width: 100vw;
+        width: 100%;
     }
     .bloco-cll {
         display: none;
