@@ -313,12 +313,6 @@ ul li .item-proga .texto-js {
 .conteudo {
     background-color: rgb(36, 36, 36);
 }
-#conteudo-caixas{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
 #texto-projeto{
     width: 100%;
     background-color: rgba(81, 79, 84, 0.423);
@@ -328,13 +322,44 @@ ul li .item-proga .texto-js {
     font-size: 2em;
     text-align: center;
 }
-.caixas {
-    width: 300px;
-    height: 300px;
-    background-color: aliceblue;
-    margin: 20px;
-}
-.caixas p {
-    padding: 20px;
-}
 
+
+
+.conteiner-slider {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#conteiner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.slider{
+    display: flex;
+    display: none;
+    transition: opacity .2s;
+    width: 100%;
+    border-radius: 10px;
+}
+.on{
+    display: flex;
+}
+#prev-button, #next-button{
+    width: 30px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+}
+#prev-button {
+    transform: rotate(180deg);
+}
