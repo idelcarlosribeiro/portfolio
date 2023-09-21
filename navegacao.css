@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#navegaçao  {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.697);
+}
+
+#lista  {
+    margin: 20px;
+    list-style: none;
+}
+#lista a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+
+    transition: .5s;
+}
+#lista a:hover {
+    transform: scale(1.4);;
+    background-color: rgba(70, 68, 68, 0.374);
+}
