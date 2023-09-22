@@ -61,7 +61,11 @@
         width: 100px;
         height: 100px;
     }
+    body {
+        overflow-x: hidden;
+    }
     ul.nav-list {
+        overflow-x: hidden;
         position: absolute;
         flex-direction: column;
         justify-content: space-around;
@@ -72,6 +76,9 @@
         height: 92vh;
         background: rgb(84, 82, 82);
         align-items: center;
+
+        transform: translateX(100%);
+        
     }
     .nav-list li {
         margin-left: 0;
