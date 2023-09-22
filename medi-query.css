@@ -61,6 +61,25 @@
         width: 100px;
         height: 100px;
     }
+    ul.nav-list {
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(84, 82, 82);
+        align-items: center;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    div.mobile-menu{
+        display: block;
+    }
 }
 @media screen and (min-width: 200px) {
     main{
@@ -97,6 +116,7 @@
     .conaiter-desktop {
         display: none;
     }
+    
 }
 @media screen and (min-width: 1300px){
     main {
@@ -118,6 +138,7 @@
     .conaiter-desktop {
         display: flex;
     }
+    
 }
 @media screen and (min-width: 1800px){
     main{
@@ -126,4 +147,5 @@
     .conteiner-dk {
         width: 100%;
     }
+    
 }
