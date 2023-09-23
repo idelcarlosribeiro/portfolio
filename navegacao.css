@@ -9,13 +9,27 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    transition: .5s
 }
 header{
     width: 100%;
     padding: 30px 4%;
     position: fixed;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
     top: 0;
     left: 0;
+
+    transition: .5s;
+}
+header.rolagem {
+    z-index: 1;
+    padding: 20px 4%;
+    background-color:rgb(19, 18, 18);
+}
+header.rolagem .flex{
+    justify-content: center;
 }
 header ul.menu {
     list-style-type: none;
@@ -27,5 +41,32 @@ header ul.menu li {
 }
 header ul.menu li a {
     color: white;
+    font-size: 1.2em;
     text-decoration: none;
+}
+header ul.menu li a:hover{
+    opacity: 0.7;
+}
+details{
+    padding-left: 20px;
+}
+summary{
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+summary:hover{
+    opacity: 0.7;
+}
+details summary{
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+}
+.ul-nav {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(54, 48, 48, 0.732);
+    border-radius: 10px;
 }

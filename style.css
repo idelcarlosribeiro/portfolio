@@ -9,13 +9,12 @@
 }
 
 body{
+    display: flex;
     background-color: rgb(42, 41, 41);
+    justify-content: center;
 }
 main{
-    width: 1300px;
-    height: 100vh;
-    margin: auto;
-
+    background-color: rgb(42, 41, 41);
     transition: width .3s, heiht .3s;
 }
 
@@ -23,9 +22,6 @@ main{
 
 /*BANER*/
 #topo {
-   
-    width: 100%;
-    height: 400px;
     background: url(imagens/pexels-josh-sorenson-1714208.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
