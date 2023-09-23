@@ -13,9 +13,9 @@
     transition: .5s
 }
 header{
-    width: 100%;
+    position: relative;
     padding: 30px 4%;
-    position: fixed;
+    justify-content: flex-end;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     top: 0;
@@ -24,6 +24,8 @@ header{
     transition: .5s;
 }
 header.rolagem {
+    width: 100%;
+    position: fixed;
     z-index: 1;
     padding: 20px 4%;
     background-color:rgb(19, 18, 18);
