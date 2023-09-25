@@ -16,10 +16,30 @@
     <main>
             <div id="topo">
                 <div id="opacit-topo">
+                    <div class="menu-mobile">
+                        <nav>
+                            <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+                            <div id="itens">
+                                <ul class="menu-mobile">
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="#container">Sobre</a></li>
+                                    <li><a href="#projetos">Projetos</a></li>
+                                    <details>
+                                        <summary>Contato</summary>
+                                        <ul class="ul-nav">
+                                            <li><a href="#">E-mal</a></li>
+                                            <li><a href="#">E-mal</a></li>
+                                        </ul>
+                                    </details>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
                     <header id="header">
                         <div class="container-menu">
                             <div class="flex">
-
+                                
                                 <nav>
                                     <ul class="menu">
                                         <li><a href="#">Inicio</a></li>
@@ -34,7 +54,7 @@
                                         </details>
                                     </ul>
                                 </nav>
-
+                                
                             </div><!--flex-->
                         </div><!--container menu-->
                     </header>
@@ -125,5 +145,6 @@
 <script src="js/carroseu.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/menu-2.js"></script>
+<script src="js/menu-mobile.js"></script>
 </body>
 </html>

@@ -13,8 +13,7 @@
     transition: .5s
 }
 header{
-    position: relative;
-    padding: 30px 4%;
+    padding: 30px;
     justify-content: flex-end;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
@@ -71,4 +70,67 @@ details summary{
     align-items: center;
     background-color: rgba(54, 48, 48, 0.732);
     border-radius: 10px;
+}
+
+
+
+/*menu mobile*/
+
+
+.menu-mobile{
+    display: none;
+}
+@media  (max-width: 550px)   {
+    header.rolagem {
+    display: none;
+}
+#opacit-topo{
+    display: flex;
+
+}
+    .menu-mobile {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        display: block;
+    }
+    #itens{
+        display: none;
+    }
+    .menu-mobile li {
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+    .menu-mobile i {
+        z-index: 2;
+        position: fixed;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 2em;
+        cursor: pointer;
+        color: white;
+    }
+    .menu-mobile li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    details{
+        padding-bottom: 10px;
+    }
+    .ul-nav{
+        margin-top: 10px;
+        width: 170px;
+    }
+    .ul-nav > li > a {
+        padding-top: 20px;
+    }
 }

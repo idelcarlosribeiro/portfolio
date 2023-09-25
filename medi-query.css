@@ -2,9 +2,9 @@
 
 @media  (max-width: 550px) { /*Celular*/
     main{
-        width: 100vw;
+        width: 100%;
     }
-    header{
+    .menu{
         display: none;
     }
     #texto p {
@@ -58,6 +58,7 @@
     #conteiner-img{
         width: 300px;
     }
+
 }
 @media  (max-width: 478px) {
     .foto {
@@ -126,7 +127,7 @@
     .bloco-cll {
         display: none;
     }
-     .conteiner-slider{
+    .conteiner-slider{
         display: flex;
     }
     .conaiter-desktop {
