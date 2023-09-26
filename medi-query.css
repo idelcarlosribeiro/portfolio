@@ -108,11 +108,6 @@
     .bloco{
         display: none;
     }
-    .rede-socias{
-        margin: 10px;
-        text-align: center;
-        width: 100%;
-    }
 }
 @media screen and (min-width: 600px) {
     .bloco-cll{
