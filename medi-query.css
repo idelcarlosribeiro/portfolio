@@ -1,6 +1,6 @@
 @charset "UTF-8";   
 
-@media  (max-width: 550px) { /*Celular*/
+@media  (max-width: 573px) { /*Celular*/
     main{
         width: 100%;
     }
@@ -52,14 +52,17 @@
     .conteiner-slider{
         display: flex;
     }
-    .conaiter-desktop {
-        display: none;
-    }
     #conteiner-img{
         width: 300px;
     }
-
+    .rede-socias{
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
 }
+
+
 @media  (max-width: 478px) {
     .foto {
         width: 100px;
@@ -102,6 +105,14 @@
     .conaiter-desktop {
         display: none;
     }
+    .bloco{
+        display: none;
+    }
+    .rede-socias{
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 600px) {
     .bloco-cll{
@@ -133,7 +144,6 @@
     .conaiter-desktop {
         display: none;
     }
-    
 }
 @media screen and (min-width: 1300px){
     main {
