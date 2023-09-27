@@ -82,6 +82,7 @@ footer_contacts h1{
     color: rgb(136, 133, 133);
 }
 .emal-texto{
+    width: 250px;
     display: flex;
     border-radius: 5px;
     height: 50px;
@@ -101,11 +102,20 @@ footer_contacts h1{
 }
 .emal-texto i {
     font-size: 1.5rem;
-    margin-right: 10px;
+    margin-left: 13px;
 }
 .emal-texto i:hover{
     color: #7f37c9;
     transition: all 0.4s;
+}
+.icone-emal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: cadetblue;
+    border-radius: 0px 5px 5px 0px;
 }
 
 #footer_copyright {
@@ -124,7 +134,7 @@ footer_contacts h1{
     }
 }
 
-@media screen and (max-width: 486px){
+@media screen and (max-width: 532px){
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         
