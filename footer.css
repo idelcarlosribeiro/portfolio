@@ -60,6 +60,9 @@ footer_contacts h1{
     gap: 0.75rem;
     list-style: none;
 }
+.footer-list li a {
+    text-decoration: none;
+}
 
 .footer-list .footer-link{
     color: rgb(136, 133, 133);
@@ -69,7 +72,6 @@ footer_contacts h1{
 .footer-list .footer-link:hover{
     color: #7f37c9;
 }
-
 #footer_subcribe{
     display: flex;
     flex-direction: column;
@@ -79,35 +81,31 @@ footer_contacts h1{
 #footer_subcribe p {
     color: rgb(136, 133, 133);
 }
-
-#input_group {
+.emal-texto{
     display: flex;
+    border-radius: 5px;
+    height: 50px;
     align-items: center;
-    background-color: rgb(136, 133, 133);
-    border-radius: 4px;
+    justify-content: center;
+    background-color: rgb(99, 95, 95);
 }
-
-#input_group input {
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button{
-    background-color: #7f37c9;
-    border: none;
+.emal-texto a{
+    margin: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
     color: white;
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
+}
+.emal-texto a:hover{
+    color: #7f37c9;
     transition: all 0.4s;
 }
-
-
-#input_group button:hover{
-    opacity: 0,8;
+.emal-texto i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.emal-texto i:hover{
+    color: #7f37c9;
+    transition: all 0.4s;
 }
 
 #footer_copyright {
@@ -126,9 +124,9 @@ footer_contacts h1{
     }
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 486px){
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
+        
     }
 }
