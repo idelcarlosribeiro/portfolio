@@ -358,21 +358,20 @@ ul li .item-proga .texto-js {
     align-items: center;
     justify-content: center;
 }
-#conteiner-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-}
+
 .conaiter-desktop img {
     width: 400px;
     padding: 10px;
 }
+
 .conteiner-dk{
     display: flex;
     margin-top: 10px;
     align-items: center;
     justify-content: center;
+}
+.conteiner-dk img {
+    border: 20px;
 }
 .slider{
     display: flex;
