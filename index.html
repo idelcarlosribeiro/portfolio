@@ -3,71 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Carlos Ribeiro</title>
+    <link rel="shortcut icon" href="imagens/IMG_20210629_185715_199.jpg" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/medi-query.css">
+    <link rel="stylesheet" href="estilos/navegacao.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-        <nav class="menu-lateral">
+    <main>
+            <div id="topo">
+                <div id="opacit-topo">
+                    <div class="menu-mobile">
+                        <nav>
+                            <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+                            <div id="itens">
+                                <ul class="menu-mobile">
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="#container">Sobre</a></li>
+                                    <li><a href="#projetos">Projetos</a></li>
+                                    <details>
+                                        <summary>Contato</summary>
+                                        <ul class="ul-nav">
+                                            <li><a href="#">E-mal</a></li>
+                                            <li><a href="#">E-mal</a></li>
+                                        </ul>
+                                    </details>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
 
-            <ul>
-                <li  class="itens">
-                    <a href="txte.html">
-                        <span class="icon"><i class="bi bi-file-person"></i></span>
-                        <span class="txt-link">Sobre</span>
+                    <header id="header">
+                        <div class="container-menu">
+                            <div class="flex">
+                                
+                                <nav>
+                                    <ul class="menu">
+                                        <li><a href="#">Inicio</a></li>
+                                        <li><a href="#container">Sobre</a></li>
+                                        <li><a href="#projetos">Projetos</a></li>
+                                        <details>
+                                            <summary>Contato</summary>
+                                            <ul class="ul-nav">
+                                                <li><a href="#">E-mal</a></li>
+                                                <li><a href="#">E-mal</a></li>
+                                            </ul>
+                                        </details>
+                                    </ul>
+                                </nav>
+                                
+                            </div><!--flex-->
+                        </div><!--container menu-->
+                    </header>
+                    <div id="texto">
+                        <p>olá</p>
+                        <h1>MEU NOME É CARLOS</h1>
+                        <h2>Seja bem vindo(a)</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="sobre-mim">
+                    <p>SOBRE MIM</p>
+                </div>
+                <div class="bloco">
+                    <p>Meu nome é Idelcarlos, mas pode me chamar de carlos. atualmente sou progamador Front-end comecei na área de programação é desenvolvimento de sites em 17/agosto 2023 tenho conhecimento nas linguagens htm3, css3 é javascript. a cada dia estou buscando ainda mas conhecimento para me aperfeiçoar nessa carreira e em busca de uma oportunidade de trabalho.</p>
+                </div>
+                <div class="foto"></div>
+                <div class="liguas">
+                    <h2>linguens</h2>
+                    <div id="li">
+                        <p>- Portugue</p>
+                    </div>
+                </div>
+                <div class="rede-socias">
+                    <h2>Contatos</h2>
+                    <div id="texto-rede">
+                        <p><a href="#" class="sobre-icone-emal"><i class="fa-regular fa-envelope"></i><a>
+                        - <a href="#" target="_blank">E-mail</a></p>
+                        
+                    </div>
+                </div>
+                <div class="bloco-cll">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum voluptatem ex maiores. Soluta odit accusamus id aspernatur debitis assumenda, voluptas cumque, sapiente, perferendis illum neque aut. Libero, omnis earum.</p>
+                </div>
+            </div>
+
+            <div id="habilidaes">
+                <div class="texto-ha"><p>Habilidades</p></div>
+                <ul>
+                    <li class="lingauem-proga">
+                        <div class="item-proga">
+                            <div  class="html-ico"><i class="fa-brands fa-html5"></i></div>
+                            <div class="barra-html"><div  class="texto-html"><p>Html 5</p></div></div>
+                        </div>
+
+                        <div class="item-proga">
+                            <div  class="css-ico"><i class="fa-brands fa-css3-alt"></i></div>
+                            <div class="barra-css"><div  class="texto-css"><p>Css</p></div></div>
+                        </div>
+
+                        <div class="item-proga">
+                            <div  class="js-ico"><i class="fa-brands fa-square-js"></i></div>
+                            <div class="barra-js"><div  class="texto-js"><p>javascript</p></div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+
+            <div id="projetos">
+                <div class="conteudo">
+                    <div id="texto-projeto"><h2>Projetos</h2></div>
+
+                        <div class="conteiner-slider">
+                            <button id="prev-button"> <img src="imagens/arrow-branco.png" alt=""></button>
+                            <div id="conteiner-img">
+                                <img src="imagens/Screenshot_1.png" alt="" class="slider on" >
+                                <img src="imagens/Screenshot_2.png" alt="" class="slider">
+                                <img src="imagens/Screenshot_3.png" alt="" class="slider">
+                            </div>
+                            <button id="next-button"> <img src="imagens/arrow-branco.png" alt=""></button>
+                        </div>
+
+                        <div class="conteiner-dk">
+                                <div class="conaiter-desktop">
+                                    <img src="imagens/Screenshot_1.png" alt="" >
+                                    <img src="imagens/Screenshot_2.png" alt="" >
+                                    <img src="imagens/Screenshot_3.png" alt="" >
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Logo</h1>
+                <p>it s all about your drens.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
+
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer_link" id="watsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
                 </li>
-                <li class="itens">
-                    <a href="#">
-                        <span class="icon"><i class="bi bi-envelope"></i></span>
-                        <span class="txt-link">Contato</span>
-                    </a>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
                 </li>
-                <li class="itens">
-                    <a href="#">
-                        <span class="icon"><i class="bi bi-file-ppt"></i></span>
-                        <span class="txt-link">Projetos</span>
-                    </a>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
                 </li>
-                <li class="itens">
-                    <a href="#">
-                        <span class="icon"><i class="bi bi-files"></i></span>
-                        <span class="txt-link">Tecnologia</span>
-                    </a>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
                 </li>
             </ul>
-        </nav>
-        <main>
-            <div class="btn-expandir">
-                <i class="bi bi-list-nested" id="btn-exp"></i>
-            </div>
-            <div id="dark-thema">
-                <input type="checkbox" class="checkbox" id="chk">
-            
-                <label class="label" for="chk">
-                    <i class="fa-solid fa-moon"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
-            </div>
-            
-            <div id="principal">
-            <div id="texto">
-                <p>ola</p>
-                <h1>Meu nome é Carlos</h1>
-                <h2>Sou desevolverdor e progamador <br> font-and e back-end</h2>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subcribe">
+                <h3>Contato</h3>
+
+                <p>E-mal para Contato.. </p>
+
+                <div class="emal-contato">
+                    <div class="emal-texto">
+                        <a href="#">idelcar13@gmal.com</a>
+                        <div class="icone-emal">
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+            <dir id="footer_copyright">
+                &#169
+                2023 todos os direitos reservados..
+            </dir>
+            </footer>
+        </main>
 
-    </main>
-    
-    <footer>
-    </footer>
-
-    <script src="js/menu.js"></script>
-    <script src="js/dark.js"></script>
+<script src="js/carroseu.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/menu-2.js"></script>
+<script src="js/menu-mobile.js"></script>
 </body>
 </html>
