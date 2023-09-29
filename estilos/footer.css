@@ -137,6 +137,20 @@ footer_contacts h1{
 @media screen and (max-width: 532px){
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
-        
+    }
+    .emal-contato{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .emal-texto{
+        width: 180px;
+    }
+    .emal-texto a{
+        font-size: .8em;
+    }
+    .emal-texto a i {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
     }
 }
