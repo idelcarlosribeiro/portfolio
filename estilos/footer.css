@@ -82,7 +82,7 @@ footer_contacts h1{
     color: rgb(136, 133, 133);
 }
 .emal-texto{
-    width: 250px;
+    width: 280px;
     display: flex;
     border-radius: 5px;
     height: 50px;
@@ -102,7 +102,7 @@ footer_contacts h1{
 }
 .emal-texto i {
     font-size: 1.5rem;
-    margin-left: 13px;
+    margin-left: 5px;
 }
 .emal-texto i:hover{
     color: #7f37c9;

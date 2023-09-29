@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emal</title>
+    <link rel="stylesheet" href="estilos/emal.css">
+</head>
+<body>
+    <h1>Contato</h1>
+    <form action="https://formsubmit.co/idelcarlosribero@gmail.com" method="POST" class="form">
+     <label for="name">Nome</label>
+     <input type="text" name="name" required id="name">
+     <label for="email">E-mal</label>
+     <input type="email" name="email" required id="email">
+     <label for="message">Mensagem</label>
+     <textarea name="message" placeholder="Escreva aqui" id="message"></textarea>
+     <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+     <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
