@@ -80,6 +80,7 @@ details summary{
 .menu-mobile{
     display: none;
 }
+
 @media  (max-width: 573px)   {
     header.rolagem {
     display: none;
