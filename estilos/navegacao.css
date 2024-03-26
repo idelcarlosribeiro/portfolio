@@ -71,19 +71,41 @@ details summary{
 
 
 /*menu mobile*/
-.menu-mobile{
+.menu-mobile, .menu-burgue i{
     display: none;
 }
 
+@keyframes showSidebar{
+    from {margin-left: -100vw;}
+    top {margin-left: -0vw;}
+}
 
-@media  (max-width: 573px){
-    .menu-mobile{
-    width: 60%;
+
+@media  (max-width: 604px){
+    .menu-burgue i{
+        display: block;
+    }
+    .menu-burgue {
+        display: block;
+        position: relative;
+        margin: 10px;
+        color: aliceblue;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+    header.rolagem{
+        background-color: transparent;
+        width: 50px;
+    }
+    #menu-mobile{
+    width: 300px;
     position: fixed;
     background-color: rgb(50, 50, 50);
     z-index: 1000;
     height: 100vh;
     display: block;
+    animation-duration: 0.7s;
+    margin-left: -100vw;
     
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
