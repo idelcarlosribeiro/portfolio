@@ -8,10 +8,9 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
-body::-webkit-scrollbar{
-    display: none;
-}
+
 body{
     background-color: rgb(42, 41, 41);
     justify-content: center;
@@ -59,7 +58,26 @@ main{
 }
 #texto h1 {
     font-size: 2.7em;
+    text-transform: uppercase;
+    width: 16ch;
+
+    animation: typing 2s steps(22, end), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
 }
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
 #texto h2 {
     font-size: 2em;
 }
@@ -82,18 +100,80 @@ main{
 }
 #sobre-mim{
     width: 100%;
-    background-color: rgba(81, 79, 84, 0.423);
-    justify-content: center;
+    display: flex;
     align-items: center;
-    text-align: center;
-    
+    justify-content: center;
 }
-#sobre-mim p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
+#my-foto{
+    width: 400px;
+    height: 500px;
+    background-image: url(/imagens/IMG_20210629_185715_199.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
     margin: 10px;
-    font-size: 2em;
+}
+#container-info{
+    display: flex;
+    flex-direction: column;
+}
+#texto-sobre-my{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 20px;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1em;
     color: white;
+}
+#infomacoes{
+    margin: 30px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px 1fr;
+}
+#texto-sobre-my h1{
+    font-size: 2.5em;
+}
+#texto-sobre-my h3{
+    color: rgb(2, 156, 203);
+}
+#texto-sobre-my p {
+    color: rgb(173, 173, 173);
+}
+#infomacoes h4 {
+    color: white;
+    font-weight: bold;
+}
+#infomacoes p {
+    color: rgb(179, 179, 179);
+}
+#container-info a{
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(2, 156, 203);
+    transition: all 0.4s;
+}
+#container-info a:hover{
+    transform: scale(104%);
+    border: white 1px solid;
+}
+#container-info a button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#container-info a:hover button{
+    color: rgb(0, 255, 136);
 }
 
 
@@ -192,143 +272,139 @@ main{
 
 
 #habilidaes{
+    margin-top: 40px;
+    color: white;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+.sub-title span{
+    color: #0ef;
+}
+section{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(36, 36, 36);
-
-    transition: width .3s, heiht .3s;
 }
-
-.texto-ha{
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.techical-bars .bar{
+    margin: 40px 0;
+}
+.techical-bars .bar:first-child{
+    margin-top: 0;
+}
+.techical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.techical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.techical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.techical-bars .bar .progress-line{
+    position: relative;
     width: 100%;
-    background-image: linear-gradient(to left, #272a34, #333645);
-    text-align: center;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
 }
-.texto-ha p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: rgb(239, 234, 234);
-    margin-top: 20px;
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
 }
-
-
-.menu ul {
-    display: flex;
-    background-color: rgb(30, 30, 30);
-    list-style-type: none;
-    justify-content: center;
+.techical-bars .bar .progress-line span{
+    position: absolute;
+    height: 100%;
+    background-color: #0ef;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
 }
-
-
-
-
-.lingauem-proga {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
+.progress-line.html span{
+    width: 90%;
 }
-.item-proga {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.progress-line.css span{
+    width: 70%;
 }
-ul li .html-ico  {
-    display: flex;
-    color: rgb(5, 122, 218);
-    font-size: 1.7em;
-    margin: 10px;
-    padding: 10px;
+.progress-line.js span{
+    width: 60%;
 }
-ul li .item-proga .texto-html {
-    font-size: 1.4em;
-    color: white;
-    width: 270px;
-    height: 38px;
-    background-image: linear-gradient(to left, #DE479C, #F55B65);
-    border-radius: 20px;
+.progress-line.python span{
+    width: 40%;
 }
-.barra-html{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 300px;
-    height: 40px;
-    background-color: rgb(54, 54, 57);
-    border-radius: 20px;
+.progress-line.react span{
+    width: 40%;
 }
-.barra-html .texto-html p {
-    text-align: center;
-    margin-top: 8px;
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
 }
-
-
-
-ul li .css-ico  {
-    display: flex;
-    color: rgb(5, 122, 218);
-    font-size: 1.7em;
-    margin: 10px;
-    padding: 10px;
+.progress-line.html span::after{
+    content: "90%";
 }
-.barra-css{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 300px;
-    height: 40px;
-    background-color: rgb(54, 54, 57);
-    border-radius: 20px;
+.progress-line.css span::after{
+    content: "70%";
 }
-ul li .item-proga .texto-css {
-    font-size: 1.4em;
-    color: white;
-    width: 230px;
-    height: 38px;
-    background-image: linear-gradient(to left, #DE479C, #F55B65);
-    border-radius: 20px;
+.progress-line.js span::after{
+    content: "60%";
 }
-.barra-css .texto-css p {
-    text-align: center;
-    margin-top: 8px;
+.progress-line.python span::after{
+    content: "40%";
 }
-
-
-
-
-
-
-ul li .js-ico  {
-    display: flex;
-    color: rgb(5, 122, 218);
-    font-size: 1.7em;
-    margin: 10px;
-    padding: 10px;
+.progress-line.react span::after{
+    content: "40%";
 }
-.barra-js{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 300px;
-    height: 40px;
-    background-color: rgb(54, 54, 57);
-    border-radius: 20px;
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
 }
-ul li .item-proga .texto-js {
-    font-size: 1.4em;
-    color: white;
-    width: 140px;
-    height: 38px;
-    background-image: linear-gradient(to left, #DE479C, #F55B65);
-    border-radius: 20px;
-}
-.barra-js .texto-js p {
-    text-align: center;
-    margin-top: 8px;
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
 }
 
 
