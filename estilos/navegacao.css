@@ -81,7 +81,7 @@ details summary{
 }
 
 
-@media  (max-width: 604px){
+@media  (max-width: 640px){
     .menu-burgue i{
         display: block;
     }

@@ -69,7 +69,7 @@
 
             <div id="tudo" onclick="closeSidebar()" tabindex="0">
                 <div id="container">
-                    <div id="sobre-mim">
+                    <div id="sobre-mim" class="hidden">
                         <div id="my-foto"></div>
                         <div id="container-info">
                             <div id="texto-sobre-my">
@@ -87,12 +87,12 @@
                         </div>
                     </div>
 
-                    <div id="habilidaes">
+                    <div id="habilidaes" class="hidden">
                         <h1 class="sub-title">
                             My <span>Skills</span>
                         </h1>
                         <section>
-                            <div class="container1" id="skills">
+                            <div class="container1" id="skills-mob">
                                 <h1 class="heading1"> Techical skills</h1>
                                 <div class="techical-bars">
                                     <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
@@ -139,11 +139,64 @@
                                 </div>
                             </div>
 
-                            
+                            <div class="container1" id="skills-dectop">
+                                <h1 class="heading1">Techical skills</h1>
+
+                                <div class="radial-bars">
+
+                                    <div class="radial-bar">
+                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                                        </svg>
+                                        <div class="prercentage">90%</div>
+                                        <div class="text">HTML</div>
+                                    </div>
+
+                                    <div class="radial-bar">
+                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                                        </svg>
+                                        <div class="prercentage">75%</div>
+                                        <div class="text">CSS</div>
+                                    </div>
+
+                                    <div class="radial-bar">
+                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                                        </svg>
+                                        <div class="prercentage">60%</div>
+                                        <div class="text">JAVASCRIPT</div>
+                                    </div>
+
+                                    <div class="radial-bar">
+                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                                        </svg>
+                                        <div class="prercentage">40%</div>
+                                        <div class="text">Python</div>
+                                    </div>
+
+                                    <div class="radial-bar">
+                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                            <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+                                        </svg>
+                                        <div class="prercentage">40%</div>
+                                        <div class="text">React</div>
+                                    </div>
+
+                                    
+                                </div>
+
+                            </div>
                         </section>
                     </div>
 
-                    <div id="projetos">
+                    <div id="projetos" class="hidden">
                         <div class="conteudo">
                             <div id="texto-projeto"><h2>Projetos</h2></div>
                                 <div class="conteiner-slider">
@@ -235,5 +288,6 @@
 <script src="js/menu.js"></script>
 <script src="js/menu-2.js"></script>
 <script src="js/menu-mobile.js"></script>
+<script src="js/dark.js"></script>
 </body>
 </html>
