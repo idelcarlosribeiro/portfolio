@@ -18,14 +18,33 @@
     <main id="content">
         <div id="topo">
             <div id="opacit-topo">
-                    <header id="header">
-                        <div id="menu-mobile" class="menu-mobile">
-                            <div id="btn" class="btn-fechar" onclick="fechar()">
-                                <i class="bi bi-x-lg"></i>
-                            </div>
-                                <ul class="menu-mob">
+                <header id="header">
+                    <div id="menu-mobile" class="menu-mobile">
+                        <div id="btn" class="btn-fechar" onclick="fechar()">
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                            <ul class="menu-mob">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#container">Sobre</a></li>
+                                <li><a href="#projetos">Projetos</a><li>
+                                <details>
+                                    <summary>Contato</summary>
+                                    <ul class="ul-nav">
+                                        <li><a href="emal.html" target="_blank">E-mal</a></li>
+                                        <li><a href="#">watsapp</a></li>
+                                    </ul>
+                                </details>
+                            </ul>
+                    </div>
+                    <div id="menu-burg" class="menu-burgue" onclick="fechar()">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="container-menu">
+                        <div class="flex">
+                            <nav>
+                                <ul class="menu">
                                     <li><a href="#">Inicio</a></li>
-                                    <li><a href="#container">Sobre</a></li>
+                                    <li><a href="#sobre-mim">Sobre</a></li>
                                     <li><a href="#projetos">Projetos</a><li>
                                     <details>
                                         <summary>Contato</summary>
@@ -35,336 +54,357 @@
                                         </ul>
                                     </details>
                                 </ul>
-                        </div>
-                        <div id="menu-burg" class="menu-burgue" onclick="fechar()">
-                            <i class="bi bi-list"></i>
-                        </div>
-                        <div class="container-menu">
-                            <div class="flex">
-                                <nav>
-                                    <ul class="menu">
-                                        <li><a href="#">Inicio</a></li>
-                                        <li><a href="#sobre-mim">Sobre</a></li>
-                                        <li><a href="#projetos">Projetos</a><li>
-                                        <details>
-                                            <summary>Contato</summary>
-                                            <ul class="ul-nav">
-                                                <li><a href="emal.html" target="_blank">E-mal</a></li>
-                                                <li><a href="#">watsapp</a></li>
-                                            </ul>
-                                        </details>
-                                    </ul>
-                                </nav>
-                                
-                            </div><!--flex-->
-                        </div><!--container menu-->
-                    </header>
-                    <div id="texto">
-                        <p>olá</p>
-                        <h1>MEU NOME É CARLOS</h1>
-                        <h2>Seja bem vindo(a)</h2>
-                    </div>
+                            </nav>
+                            
+                        </div><!--flex-->
+                    </div><!--container menu-->
+                </header>
+                <div id="texto">
+                    <p>olá</p>
+                    <h1>MEU NOME É CARLOS</h1>
+                    <h2>Seja bem vindo(a)</h2>
                 </div>
+            </div>
         </div>
 
-            <div id="tudo" onclick="closeSidebar()" tabindex="0">
-                <div id="container">
-                    <div id="sobre-mim" class="hidden">
-                        <div id="my-foto"></div>
-                        <div id="container-info">
-                            <div id="texto-sobre-my">
-                                <h3>Quem sou eu?</h3>
-                                <h1>Oi, sou o Carlos. Sou progamador/desevolvedor web</h1>
-                                <p>Meu nome é Idelcarlos, mas pode me chamar de carlos. Comecei na área da programação é desenvolvimento de sites em 17/agosto 2023, tenho conhecimento nas linguagens htm3, css3 javascript e Pytom. A cada dia estou buscando ainda mais conhecimento para aperfeiçoar-me nessa carreira, e em busca de uma oportunidade de trabalho.</p>
-                            </div>
-                            <div id="infomacoes">
-                                <h4>Nome:</h4><p>Idelcarlos Ribeiro</p>
-                                <h4>De:</h4><p>Fortaleza, Ce</p>
-                                <h4>Idade:</h4><p>21</p>
-                                <h4>Emal:</h4><p>idelcarlosribeiro@gmail.com</p>
-                            </div>
-                            <a href="emal.html" target="_blank"><button>Contato</button></a>
+        <div id="tudo" onclick="closeSidebar()" tabindex="0">
+            <div id="container">
+                
+                <div id="sobre-mim" class="hidden">
+                    <div id="my-foto"></div>
+                    <div id="container-info">
+                        <div id="texto-sobre-my">
+                            <h3>Quem sou eu?</h3>
+                            <h1>Oi, sou o Carlos. Sou progamador/desevolvedor web</h1>
+                            <p>Meu nome é Idelcarlos, mas pode me chamar de carlos. Comecei na área da programação é desenvolvimento de sites em 17/agosto 2023, tenho conhecimento nas linguagens htm3, css3 javascript e Pytom. A cada dia estou buscando ainda mais conhecimento para aperfeiçoar-me nessa carreira, e em busca de uma oportunidade de trabalho.</p>
                         </div>
+                        <div id="infomacoes">
+                            <h4>Nome:</h4><p>Idelcarlos Ribeiro</p>
+                            <h4>De:</h4><p>Fortaleza, Ce</p>
+                            <h4>Idade:</h4><p>21</p>
+                            <h4>Emal:</h4><p>idelcarlosribeiro@gmail.com</p>
+                        </div>
+                        <a href="emal.html" target="_blank"><button>Contato</button></a>
                     </div>
+                </div>
 
-                    <div id="habilidaes" class="hidden">
-                        <h1 class="sub-title">
-                            My <span>Skills</span>
-                        </h1>
-                        <section>
-                            <div class="container1" id="skills-mob">
-                                <h1 class="heading1"> Techical skills</h1>
-                                <div class="techical-bars">
-                                    <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
-                                        <div class="indfo"></div>
-                                        <span>HTML</span>
-                                        <div class="progress-line html">
-                                            <span></span>
-                                        </div>
+                <div id="habilidaes">
+                    <h1 class="sub-title">
+                        My <span>Skills</span>
+                    </h1>
+                    <section class="hidden">
+                        <div class="container1" id="skills-mob">
+                            <h1 class="heading1"> Techical skills</h1>
+                            <div class="techical-bars">
+                                <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
+                                    <div class="indfo"></div>
+                                    <span>HTML</span>
+                                    <div class="progress-line html">
+                                        <span></span>
                                     </div>
-
-                                    <div class="bar"><i style="color: #147bbc;" class="fa-brands fa-css3-alt"></i>
-                                        <div class="indfo"></div>
-                                        <span>CSS</span>
-                                        <div class="progress-line css">
-                                            <span></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="bar"><i style="color: #b0bc1e;" class="fa-brands fa-js"></i>
-                                        <div class="indfo"></div>
-                                        <span>JAVASCRIPT</span>
-                                        <div class="progress-line js">
-                                            <span></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="bar"><i style="color: #c32ec9;" class="fa-brands fa-python"></i>
-                                        <div class="indfo"></div>
-                                        <span>Python</span>
-                                        <div class="progress-line python">
-                                            <span></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="bar"><i style="color: #69BCBC;" class="fa-brands fa-react"></i>
-                                        <div class="indfo"></div>
-                                        <span>React</span>
-                                        <div class="progress-line react">
-                                            <span></span>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <div class="container1" id="skills-dectop">
-                                <h1 class="heading1">Techical skills</h1>
-
-                                <div class="radial-bars">
-
-                                    <div class="radial-bar">
-                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                                        </svg>
-                                        <div class="prercentage">90%</div>
-                                        <div class="text">HTML</div>
-                                    </div>
-
-                                    <div class="radial-bar">
-                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                                        </svg>
-                                        <div class="prercentage">75%</div>
-                                        <div class="text">CSS</div>
-                                    </div>
-
-                                    <div class="radial-bar">
-                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                                        </svg>
-                                        <div class="prercentage">60%</div>
-                                        <div class="text">JAVASCRIPT</div>
-                                    </div>
-
-                                    <div class="radial-bar">
-                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                                        </svg>
-                                        <div class="prercentage">40%</div>
-                                        <div class="text">Python</div>
-                                    </div>
-
-                                    <div class="radial-bar">
-                                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                            <circle class="path path-5" cx="100" cy="100" r="80"></circle>
-                                        </svg>
-                                        <div class="prercentage">40%</div>
-                                        <div class="text">React</div>
-                                    </div>
-
-                                    
                                 </div>
 
-                            </div>
-                        </section>
-                    </div>
+                                <div class="bar"><i style="color: #147bbc;" class="fa-brands fa-css3-alt"></i>
+                                    <div class="indfo"></div>
+                                    <span>CSS</span>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
+                                </div>
 
+                                <div class="bar"><i style="color: #b0bc1e;" class="fa-brands fa-js"></i>
+                                    <div class="indfo"></div>
+                                    <span>JAVASCRIPT</span>
+                                    <div class="progress-line js">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar"><i style="color: #c32ec9;" class="fa-brands fa-python"></i>
+                                    <div class="indfo"></div>
+                                    <span>Python</span>
+                                    <div class="progress-line python">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar"><i style="color: #69BCBC;" class="fa-brands fa-react"></i>
+                                    <div class="indfo"></div>
+                                    <span>React</span>
+                                    <div class="progress-line react">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="container1" id="skills-dectop">
+                            <h1 class="heading1">Techical skills</h1>
+
+                            <div class="radial-bars">
+
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="prercentage">90%</div>
+                                    <div class="text">HTML</div>
+                                </div>
+
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="prercentage">75%</div>
+                                    <div class="text">CSS</div>
+                                </div>
+
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="prercentage">60%</div>
+                                    <div class="text">JAVASCRIPT</div>
+                                </div>
+
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="prercentage">40%</div>
+                                    <div class="text">Python</div>
+                                </div>
+
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="prercentage">40%</div>
+                                    <div class="text">React</div>
+                                </div>
+
+                                
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <div id="projetos" class="hidden">
                     <h1 class="sub-title">
                         My <span>Projects</span>
                     </h1>
-                    <div id="projetos" class="hidden">
-                            <!-- list Items -->
-                        <div class="slider">
-                            <div class="list">
-                                <div class="item active">
-                                    <img src="imagens/pexels-satoshi-hirayama-7508611.jpg">
-                                    <div class="content">
-                                        <p>design</p>
-                                        <h2>Slider 01</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="imagens/japo-baner.jpg">
-                                    <div class="content">
-                                        <p>design</p>
-                                        <h2>Slider 02</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="imagens/pexels-pixabay-315191.jpg">
-                                    <div class="content">
-                                        <p>design</p>
-                                        <h2>Slider 03</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="imagens/rua-jp.jpg">
-                                    <div class="content">
-                                        <p>design</p>
-                                        <h2>Slider 04</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="imagens/pexels-matheus-bertelli-7172661.jpg">
-                                    <div class="content">
-                                        <p>design</p>
-                                        <h2>Slider 05</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                                        </p>
-                                    </div>
+                        <!-- list Items -->
+                    <div class="slider">
+                        <div class="list">
+                            <div class="item active">
+                                <img src="imagens/pexels-satoshi-hirayama-7508611.jpg">
+                                <div class="content">
+                                    <p>design</p>
+                                    <h2>Slider 01</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                                    </p>
                                 </div>
                             </div>
-                            <!-- button arrows -->
-                            <div class="arrows">
-                                <button id="prev"><</button>
-                                <button id="next">></button>
+                            <div class="item">
+                                <img src="imagens/japo-baner.jpg">
+                                <div class="content">
+                                    <p>design</p>
+                                    <h2>Slider 02</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                                    </p>
+                                </div>
                             </div>
-                            <!-- thumbnail -->
-                            <div class="thumbnail">
-                                <div class="item active">
-                                    <img src="imagens/pexels-satoshi-hirayama-7508611.jpg">
-                                    <div class="content">
-                                        Name Slider
-                                    </div>
+                            <div class="item">
+                                <img src="imagens/pexels-pixabay-315191.jpg">
+                                <div class="content">
+                                    <p>design</p>
+                                    <h2>Slider 03</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                                    </p>
                                 </div>
-                                <div class="item">
-                                    <img src="imagens/japo-baner.jpg">
-                                    <div class="content">
-                                        Name Slider
-                                    </div>
+                            </div>
+                            <div class="item">
+                                <img src="imagens/rua-jp.jpg">
+                                <div class="content">
+                                    <p>design</p>
+                                    <h2>Slider 04</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                                    </p>
                                 </div>
-                                <div class="item">
-                                    <img src="imagens/pexels-pixabay-315191.jpg">
-                                    <div class="content">
-                                        Name Slider
-                                    </div>
+                            </div>
+                            <div class="item">
+                                <img src="imagens/pexels-matheus-bertelli-7172661.jpg">
+                                <div class="content">
+                                    <p>design</p>
+                                    <h2>Slider 05</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                                    </p>
                                 </div>
-                                <div class="item">
-                                    <img src="imagens/rua-jp.jpg">
-                                    <div class="content">
-                                        Name Slider
-                                    </div>
+                            </div>
+                        </div>
+                        <!-- button arrows -->
+                        <div class="arrows">
+                            <button id="prev"><</button>
+                            <button id="next">></button>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <div class="item active">
+                                <img src="imagens/pexels-satoshi-hirayama-7508611.jpg">
+                                <div class="content">
+                                    Name Slider
                                 </div>
-                                <div class="item">
-                                    <img src="imagens/pexels-matheus-bertelli-7172661.jpg">
-                                    <div class="content">
-                                        Name Slider
+                            </div>
+                            <div class="item">
+                                <img src="imagens/japo-baner.jpg">
+                                <div class="content">
+                                    Name Slider
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="imagens/pexels-pixabay-315191.jpg">
+                                <div class="content">
+                                    Name Slider
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="imagens/rua-jp.jpg">
+                                <div class="content">
+                                    Name Slider
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="imagens/pexels-matheus-bertelli-7172661.jpg">
+                                <div class="content">
+                                    Name Slider
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="my-sevices">
+                    <h1 class="sub-title">
+                        My <span>services</span>
+                    </h1>
+                    <div id="container-servisos"  class="hidden">
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="blocos-sev">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Mygit</h3>
+                            <p>Lorem, ipsum dolor.Lorem, ipsum dolor.Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div id="footer_content">
+                        <div id="footer_contacts">
+                            <h1>Logo</h1>
+                            <p>it s all about your drens.</p>
+                            <div id="footer_social_media">
+                                <a href="#" class="footer_link" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="footer_link" id="facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="footer_link" id="watsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Blog</h3>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Tech</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Adventures</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Music</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Products</h3>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">App</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Desktop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Cloud</a>
+                            </li>
+                        </ul>
+                        <div id="footer_subcribe">
+                            <h3>Contato</h3>
+                            <p>E-mal para Contato.. </p>
+                            <div class="emal-contato">
+                                <div class="emal-texto">
+                                    <a href="emal.html" target="_blank">idelcarlosribero@gmail.com</a>
+                                    <div class="icone-emal">
+                                        <a href="emal.html" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <footer>
-                        <div id="footer_content">
-                            <div id="footer_contacts">
-                                <h1>Logo</h1>
-                                <p>it s all about your drens.</p>
-                                <div id="footer_social_media">
-                                    <a href="#" class="footer_link" id="instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="footer_link" id="facebook">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="footer_link" id="watsapp">
-                                        <i class="fa-brands fa-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <ul class="footer-list">
-                                <li>
-                                    <h3>Blog</h3>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">Tech</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">Adventures</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">Music</a>
-                                </li>
-                            </ul>
-                            <ul class="footer-list">
-                                <li>
-                                    <h3>Products</h3>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">App</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">Desktop</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">Cloud</a>
-                                </li>
-                            </ul>
-                            <div id="footer_subcribe">
-                                <h3>Contato</h3>
-                                <p>E-mal para Contato.. </p>
-                                <div class="emal-contato">
-                                    <div class="emal-texto">
-                                        <a href="emal.html" target="_blank">idelcarlosribero@gmail.com</a>
-                                        <div class="icone-emal">
-                                            <a href="emal.html" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <dir id="footer_copyright">
-                            &#169
-                            2023 todos os direitos reservados..
-                        </dir>
-                    </footer>
+                    <dir id="footer_copyright">
+                        &#169
+                        2023 todos os direitos reservados..
+                    </dir>
+                </footer>
             </div>
-        </main>
+        </div>
+    </main>
 
 <script src="js/carroseu.js"></script>
 <script src="js/menu.js"></script>
