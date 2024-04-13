@@ -740,4 +740,24 @@ section{
     font-weight: bold;
     font-size: 0.8em;
 }
+#container-servisos :nth-child(1){
+    transition-delay: 0ms;
+}
+#container-servisos :nth-child(2){
+    transition-delay: 300ms;
+}
+#container-servisos :nth-child(3){
+    transition-delay: 500ms;
+}
+#container-servisos :nth-child(4){
+    transition-delay: 0ms;
+}
+#container-servisos :nth-child(5){
+    transition-delay: 300ms;
+}
+#container-servisos :nth-child(6){
+    transition-delay: 500ms;
+}
+
+
 /*MEUS SERÇOS FIM*/
