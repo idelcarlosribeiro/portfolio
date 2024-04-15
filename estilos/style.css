@@ -9,7 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 50px;
 }
 
 body{
@@ -47,7 +47,7 @@ header{
     top: 0;
     left: 0;
 
-    transition: .5s;
+    transition: all .5s;
 }
 header.rolagem {
     width: 100%;

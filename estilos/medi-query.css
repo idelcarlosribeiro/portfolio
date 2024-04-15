@@ -109,7 +109,7 @@
     }
 
     /*MENU MOB*/
-        .menu-burgue i{
+    .menu-burgue i{
         display: block;
     }
     .menu-burgue {
@@ -131,7 +131,7 @@
     z-index: 1000;
     height: 100vh;
     display: block;
-    animation-duration: 0.7s;
+    transition: all 1s;
     margin-left: -100vw;
     
     font-family: 'Oswald', sans-serif;

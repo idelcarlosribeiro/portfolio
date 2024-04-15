@@ -21,13 +21,13 @@ function fechar(){
     topo.style.filter = "";
   }
 }
-function closeSidebar() {
-  if(siderbar){
-    fechar();
-  }
-}
 window.addEventListener('resize', function(event){
   if (window.innerWidth > 604 && siderbar){
     fechar();
   }
 });
+
+
+
+
+

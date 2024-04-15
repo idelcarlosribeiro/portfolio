@@ -22,9 +22,9 @@
                             <i class="bi bi-x-lg"></i>
                         </div>
                             <ul class="menu-mob">
-                                <li><a href="#">Inicio</a></li>
-                                <li><a href="#container">Sobre</a></li>
-                                <li><a href="#projetos">Projetos</a><li>
+                                <li><a href="#" onclick="fechar()">Inicio</a></li>
+                                <li><a href="#container" onclick="fechar()">Sobre</a></li>
+                                <li><a href="#projetos" onclick="fechar()">Projetos</a><li>
                                 <details>
                                     <summary>Contato</summary>
                                     <ul class="ul-nav">
@@ -65,10 +65,10 @@
             </div>
         </div>
 
-        <div id="tudo" onclick="closeSidebar()" tabindex="0">
+        <div id="tudo"  tabindex="0">
             <div id="container">
                 
-                <div id="sobre-mim" class="hidden">
+                <div id="sobre-mim" class="hidden" onclick="fechar()">
                     <div id="my-foto"></div>
                     <div id="container-info">
                         <div id="texto-sobre-my">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div id="habilidaes">
+                <div id="habilidaes" onclick="fechar()">
                     <h1 class="sub-title">
                         My <span>Skills</span>
                     </h1>
@@ -299,7 +299,7 @@
                     </div>
                 </div>
 
-                <div id="my-sevices">
+                <div id="my-sevices" onclick="fechar()">
                     <h1 class="sub-title">
                         My <span>services</span>
                     </h1>
