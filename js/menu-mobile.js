@@ -1,8 +1,8 @@
-var menuMob = document.getElementById("menu-mobile");
-var content = document.getElementById("tudo");
-var menuBur = document.getElementById("menu-burg");
-var topo = document.getElementById('texto')
-var siderbar = false;
+let menuMob = document.getElementById("menu-mobile");
+let content = document.getElementById("tudo");
+let menuBur = document.getElementById("menu-burg");
+let topo = document.getElementById('texto')
+let siderbar = false;
 
 function fechar(){
   siderbar = !siderbar;

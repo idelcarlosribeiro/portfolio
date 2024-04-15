@@ -1,6 +1,52 @@
-@charset "UTF-8";   
+@charset "UTF-8";
 
-@media  (max-width: 640px) { /*Celular*/
+
+@media screen and (min-width: 200px) {
+    main{
+        width: 100%;
+    }
+    .conteiner-slider{
+        display: flex;
+    }
+    .conaiter-desktop {
+        display: none;
+    }
+}
+
+
+@media  (max-width: 478px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    ul.nav-list {
+        overflow-x: hidden;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(84, 82, 82);
+        align-items: center;
+
+        transform: translateX(100%);
+        
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    div.mobile-menu{
+        display: block;
+    }
+}
+
+
+/*Celular*/
+@media  (max-width: 640px) {
     main{
         width: 100%;
     }
@@ -61,66 +107,80 @@
         text-align: center;
         width: 100%;
     }
-}
 
-
-@media  (max-width: 478px) {
-    body {
-        overflow-x: hidden;
-    }
-    
-    ul.nav-list {
-        overflow-x: hidden;
-        position: absolute;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 1;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: rgb(84, 82, 82);
-        align-items: center;
-
-        transform: translateX(100%);
-        
-    }
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-    div.mobile-menu{
+    /*MENU MOB*/
+        .menu-burgue i{
         display: block;
     }
-}
-@media screen and (min-width: 200px) {
-    main{
-        width: 100%;
-    }
-    .conteiner-slider{
-        display: flex;
-    }
-    .conaiter-desktop {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1430px){
-    header.rolagem{
-        border-radius: 0px 0px 10px 10px;
-    }
-    .container-menu{
+    .menu-burgue {
+        display: block;
         position: relative;
+        margin: 10px;
+        color: aliceblue;
+        font-size: 1.8em;
+        cursor: pointer;
     }
-    #container-servisos{
-        width: 100%;
+    header.rolagem{
+        background-color: transparent;
+        width: 50px;
     }
+    #menu-mobile{
+    width: 300px;
+    position: fixed;
+    background-color: rgb(50, 50, 50);
+    z-index: 1000;
+    height: 100vh;
+    display: block;
+    animation-duration: 0.7s;
+    margin-left: -100vw;
+    
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    }
+    .menu-mob{
+        height: 100vh;
+        display: block;
+        
+    }
+    .menu-mob li {
+        padding: 40px;
+    }
+    .menu-mob a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        text-align: left;
+        transition: 0.2s;
+    }
+    .menu-mob a:hover{
+        opacity: 0.7;
+        margin: 10px;
+        transition-duration: 0.2s;
+    }
+    .btn-fechar{
+        margin: 20px;
+        color: aliceblue;
+        font-size: 1.8em;
+        cursor: pointer;
+        text-align: center;
+        transition: 1s;
+    }
+    .btn-fechar:hover{
+        transition-timing-function: ease;
+        transition-duration: 1s;
+        transform: scale(1.2);
+    }
+    details summary{
+        list-style-type: none;
+        align-content: none;
+        text-align: center;
+    }
+    /*MENU MOB*/
 }
 
 
-
-
-@media screen and (min-width: 800px){ /*Desktop Tv*/
+/*Desktop Tv*/
+@media screen and (min-width: 800px){ 
     main {
         width: 780px;
     }
@@ -131,6 +191,8 @@
         display: none;
     }
 }
+
+
 @media screen and (min-width: 1300px){
     main {
         width: 100%;
@@ -155,6 +217,23 @@
         width: 1000px;
     }
 }
+
+
+@media screen and (max-width: 1430px){
+    header.rolagem{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .container-menu{
+        position: relative;
+    }
+    #container-servisos{
+        width: 100%;
+    }
+}
+
+
+
+
 @media screen and (min-width: 1800px){
     main{
         width: 1800px;
@@ -162,5 +241,4 @@
     .conteiner-dk {
         width: 100%;
     }
-    
 }
